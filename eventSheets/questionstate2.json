@@ -1,0 +1,77 @@
+{
+	"name": "QuestionState2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-text-changed",
+					"objectClass": "TextInput",
+					"sid": 844688778954130
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 520263417705636,
+					"parameters": {
+						"variable": "answer",
+						"value": "TextInput.Text"
+					}
+				}
+			],
+			"sid": 522516390403133
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 375953962267016,
+					"parameters": {
+						"first-value": "answer",
+						"comparison": 0,
+						"second-value": "\"Sulfuric acid\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 115667189904326,
+					"parameters": {
+						"layout": "Overworld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 247945362985194,
+					"parameters": {
+						"variable": "answer",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Objective_C1",
+					"sid": 655991537673043
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 309639284963211,
+					"parameters": {
+						"variable": "WonMath2",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 661393574900819
+		}
+	],
+	"sid": 717304102129687
+}

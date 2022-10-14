@@ -1,0 +1,77 @@
+{
+	"name": "QuestionState3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-text-changed",
+					"objectClass": "TextInput",
+					"sid": 854203787490255
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 315662700989407,
+					"parameters": {
+						"variable": "answer",
+						"value": "TextInput.Text"
+					}
+				}
+			],
+			"sid": 299268012421713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 686780939078661,
+					"parameters": {
+						"first-value": "answer",
+						"comparison": 0,
+						"second-value": "\"1\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 593429455664321,
+					"parameters": {
+						"layout": "Overworld"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 881877445964793,
+					"parameters": {
+						"variable": "answer",
+						"value": "\"\""
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Objective_C1",
+					"sid": 176619593624428
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 139068467964112,
+					"parameters": {
+						"variable": "WonMath",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 166323925082065
+		}
+	],
+	"sid": 256436480026956
+}

@@ -1,0 +1,285 @@
+{
+	"name": "Gameplay",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "answer",
+			"type": "string",
+			"initialValue": "",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 797090221680656
+		},
+		{
+			"eventType": "variable",
+			"name": "WonMath",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 145250608572132
+		},
+		{
+			"eventType": "variable",
+			"name": "WonMath2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 443957909231954
+		},
+		{
+			"eventType": "variable",
+			"name": "WonMath3",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 989404531052535
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 771036475926426
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C1_In",
+					"sid": 807652267578274,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 914276382644946,
+					"parameters": {
+						"x": "849.054541",
+						"y": "702.999928"
+					}
+				}
+			],
+			"sid": 589921528315502
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C1_Out",
+					"sid": 368095749224572,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 519994664130121,
+					"parameters": {
+						"x": "849.054541",
+						"y": "1090.050468"
+					}
+				}
+			],
+			"sid": 863606057561249
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C3_Out",
+					"sid": 265373286781058,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 233453696628228,
+					"parameters": {
+						"x": "2121",
+						"y": "1105"
+					}
+				}
+			],
+			"sid": 768997782863133
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C3_In",
+					"sid": 342820072121308,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 475751871816830,
+					"parameters": {
+						"x": "2121",
+						"y": "699"
+					}
+				}
+			],
+			"sid": 138685640332793
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C2_Out",
+					"sid": 703181593569476,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 823821372363525,
+					"parameters": {
+						"x": "1256",
+						"y": "1069"
+					}
+				}
+			],
+			"sid": 561583755975310
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "teleportBox_C2_In",
+					"sid": 763184515947471,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player",
+					"sid": 672817411444377,
+					"parameters": {
+						"x": "1256",
+						"y": "1776"
+					}
+				}
+			],
+			"sid": 139474548078073
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Objective_C1",
+					"sid": 859330841275698,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 429330686183370,
+					"parameters": {
+						"layout": "QuestionTestState"
+					}
+				}
+			],
+			"sid": 447052916992601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Objective_C3",
+					"sid": 198525474621920,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 438228362327047,
+					"parameters": {
+						"layout": "QuestionTestState"
+					}
+				}
+			],
+			"sid": 413935407142146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 712718300035094,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 111056987048356,
+					"parameters": {
+						"variable": "WonMath"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Objective_C1",
+					"sid": 832951468949394
+				}
+			],
+			"sid": 139482399639086
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 322204546540954
+		}
+	],
+	"sid": 639052476483512
+}

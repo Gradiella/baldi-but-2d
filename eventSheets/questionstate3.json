@@ -29,11 +29,11 @@
 				{
 					"id": "compare-two-values",
 					"objectClass": "System",
-					"sid": 686780939078661,
+					"sid": 529946911539403,
 					"parameters": {
 						"first-value": "answer",
 						"comparison": 0,
-						"second-value": "\"1\""
+						"second-value": "\"Vo\""
 					}
 				}
 			],
@@ -63,14 +63,47 @@
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 139068467964112,
+					"sid": 451762678901947,
 					"parameters": {
-						"variable": "WonMath",
+						"variable": "WonMath3",
 						"value": "true"
 					}
 				}
 			],
 			"sid": 166323925082065
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 946355389283625,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 310548991462444,
+					"parameters": {
+						"variable": "gametime",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 774581685440633,
+					"parameters": {
+						"text": "gametime"
+					}
+				}
+			],
+			"sid": 624848602786541
 		}
 	],
 	"sid": 256436480026956

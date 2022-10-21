@@ -1,5 +1,87 @@
 {
 	"name": "i have no idea which one this is",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 232876712255746,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 811711765084790,
+					"parameters": {
+						"text": "gametime"
+					}
+				}
+			],
+			"sid": 525755511183097
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 357929551707375
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 422948819042756,
+					"parameters": {
+						"variable": "WonMath",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 785831958391322,
+					"parameters": {
+						"variable": "WonMath2",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 113564695604750,
+					"parameters": {
+						"variable": "WonMath3",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 318658278511977,
+					"parameters": {
+						"variable": "gametime",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 668496479647338,
+					"parameters": {
+						"layout": "Overworld"
+					}
+				}
+			],
+			"sid": 371802258460532
+		}
+	],
 	"sid": 184526361138152
 }

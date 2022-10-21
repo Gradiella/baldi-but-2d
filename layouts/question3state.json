@@ -42,10 +42,52 @@
 				{
 					"type": "Text",
 					"properties": {
-						"text": "What is 6 / 2^(1+3)",
+						"text": "What variable name do you use for \"initial speed of an object\" in physics",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 21,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 172,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 315,
+						"y": 277,
+						"width": 609,
+						"height": 108,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ScoreText",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 32,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -61,14 +103,24 @@
 						"initially-visible": true,
 						"origin": "top-left"
 					},
-					"uid": 172,
+					"uid": 168,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "window-right",
+								"bottom-edge": "window-bottom",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 475,
-						"y": 301,
-						"width": 609,
-						"height": 108,
+						"x": 10,
+						"y": 2,
+						"width": 188.53286327677955,
+						"height": 126.68517341700044,
 						"originX": 0,
 						"originY": 0,
 						"color": [

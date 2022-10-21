@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
@@ -53,6 +61,14 @@
 			"author": "Scirra",
 			"version": "r308.2",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Anchor",
+			"name": "Anchor",
+			"author": "Scirra",
+			"version": "r308.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "p0fy2ljvsom",
@@ -60,7 +76,10 @@
 		"items": [
 			"Player",
 			"TextInput",
-			"Text"
+			"Text",
+			"ScoreText",
+			"Text3",
+			"Button"
 		],
 		"subfolders": [
 			{
@@ -85,7 +104,8 @@
 					"teleportBox_C2_In",
 					"teleportBox_C2_Out",
 					"teleportBox_C3_In",
-					"teleportBox_C3_Out"
+					"teleportBox_C3_Out",
+					"EXit"
 				],
 				"subfolders": [],
 				"name": "Object_Programmable"

@@ -71,6 +71,39 @@
 				}
 			],
 			"sid": 661393574900819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 845858622352318,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 752875105384201,
+					"parameters": {
+						"variable": "gametime",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 328944767011896,
+					"parameters": {
+						"text": "gametime"
+					}
+				}
+			],
+			"sid": 296202152532896
 		}
 	],
 	"sid": 717304102129687

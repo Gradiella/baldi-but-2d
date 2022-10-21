@@ -42,6 +42,16 @@
 			"sid": 989404531052535
 		},
 		{
+			"eventType": "variable",
+			"name": "gametime",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 996758903878896
+		},
+		{
 			"eventType": "block",
 			"conditions": [],
 			"actions": [],
@@ -163,10 +173,10 @@
 				{
 					"id": "set-position",
 					"objectClass": "Player",
-					"sid": 823821372363525,
+					"sid": 209930506234192,
 					"parameters": {
 						"x": "1256",
-						"y": "1069"
+						"y": "1376"
 					}
 				}
 			],
@@ -226,6 +236,78 @@
 			"conditions": [
 				{
 					"id": "on-collision-with-another-object",
+					"objectClass": "EXit",
+					"sid": 354191797503916,
+					"parameters": {
+						"object": "Player"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 198427923342194,
+					"parameters": {
+						"variable": "WonMath2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 706425322774119,
+					"parameters": {
+						"variable": "WonMath3"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 803722659583700,
+					"parameters": {
+						"variable": "WonMath"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 791119806664002,
+					"parameters": {
+						"layout": "FinishState"
+					}
+				}
+			],
+			"sid": 954989066080555
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Objective_C2",
+					"sid": 757217591127971,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 904640304141149,
+					"parameters": {
+						"layout": "Question3State"
+					}
+				}
+			],
+			"sid": 146642124665869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
 					"objectClass": "Objective_C3",
 					"sid": 198525474621920,
 					"parameters": {
@@ -237,9 +319,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 438228362327047,
+					"sid": 218098521874285,
 					"parameters": {
-						"layout": "QuestionTestState"
+						"layout": "Question2State"
 					}
 				}
 			],
@@ -276,9 +358,100 @@
 		},
 		{
 			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 341317963036714,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 887031688693733,
+					"parameters": {
+						"variable": "WonMath3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Objective_C2",
+					"sid": 203569353052998
+				}
+			],
+			"sid": 584570756574015
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 198565349283491,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 728323717363783,
+					"parameters": {
+						"variable": "WonMath2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Objective_C3",
+					"sid": 290439769736664
+				}
+			],
+			"sid": 972286255278340
+		},
+		{
+			"eventType": "block",
 			"conditions": [],
 			"actions": [],
 			"sid": 322204546540954
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 922431382022271,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 387943494806471,
+					"parameters": {
+						"variable": "gametime",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 324747486821914,
+					"parameters": {
+						"text": "gametime"
+					}
+				}
+			],
+			"sid": 592118184015503
 		}
 	],
 	"sid": 639052476483512
